@@ -2,13 +2,13 @@
 
 void intercambiar(int *a, int *b);
 int* encontrarOcurrencia(int *x ,int v, int len);
-void desglozar(char *f);
+void desglosar(char *f);
 
 int main(int argc,char** argv){
 
 	printf("Integrantes:\n- Miguel Sanchez\n- Luis Lama\n\n");
 	
-	desglozar("2017-06-25");
+	desglosar("2017-06-25");
 	
 	int n[5] = {1,2,3,4,5};
 	
@@ -23,7 +23,7 @@ int main(int argc,char** argv){
 	return 0;
 }
 
-void desglozar(char *f){
+void desglosar(char *f){
 	printf("Dia: %.*s\n",2,f+8);
 	printf("Mes: %.*s\n",2,f+5);
 	printf("Anio: %.*s\n",4,f);
