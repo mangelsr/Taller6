@@ -6,12 +6,13 @@ void desglozar(char *f);
 
 int main(int argc,char** argv){
 
-	printf("Integrantes:\n- Miguel Sanchez\n- Luis Lama\n\n\n");
+	printf("Integrantes:\n- Miguel Sanchez\n- Luis Lama\n\n");
 	
 	desglozar("2017-06-25");
 	
 	int n[5] = {1,2,3,4,5};
-	encontrarOcurrencia(n,4,5);
+	
+	printf("\nDireccion del elemento: %p\nEl valor: %d\n",encontrarOcurrencia(n,3,5),*encontrarOcurrencia(n,3,5));
 	
 	int a = 4;
 	int b = 7;
@@ -31,7 +32,7 @@ void desglozar(char *f){
 int* encontrarOcurrencia(int *x ,int v, int len){
 	for(int i = 0; i < len; i++){
 		if (*(x+i)==v){
-			printf("Direccion del elemento: %p\n",(x+i));
+			//printf("Direccion del elemento: %p\n",(x+i));
 			return (x+i);
 		}
 	}
